@@ -1,0 +1,4 @@
+dotnet tool install --global dotnet-sonarscanner
+dotnet sonarscanner begin /k:"test-csharp-net-7-api-pro" /d:sonar.host.url="http://localhost:9000"  /d:sonar.token="sqp_abeab0b371f5449d76b022eaff2c1f8b8e79ec38"
+dotnet build
+dotnet sonarscanner end /d:sonar.token="sqp_abeab0b371f5449d76b022eaff2c1f8b8e79ec38"
